@@ -1,0 +1,4 @@
+->      /                                                  health.Routes
+GET     /guides/telephony-service-guide           controllers.Default.redirect(to = "/guides/telephony-service-guide/")
+GET     /guides/telephony-service-guide/          controllers.Assets.at(path="/public", file="index.html")
+GET     /guides/telephony-service-guide/*file     controllers.Assets.at(path="/public", file)
