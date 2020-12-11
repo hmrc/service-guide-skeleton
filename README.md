@@ -2,8 +2,8 @@
 
 ## Overview
 
-Service Guides are created using a GDS [Tech Docs Templates](https://github.com/alphagov/tech-docs-template). 
-The generated HTML files are then served by a simple Scala Play application so that they can be deployed as 
+Service Guides are created using a GDS [Tech Docs Templates](https://github.com/alphagov/tech-docs-template).
+The generated HTML files are then served by a simple Scala Play application so that they can be deployed as
 an MDTP microservice.
 
 ## Getting started
@@ -14,10 +14,10 @@ You will need:
 * Ruby with Rubygems, perferably with a [Ruby version manager][rvm]
 * [Bundler][bundler]
 
-####Source files
+### Source files
 Template files are located in `/source/documentation`. To add new pages simply copy and paste one of the existing pages, it will automatically appear in the menu.
 
-####Previewing
+### Previewing
 
 ```
 bundle install
@@ -26,14 +26,14 @@ bundle exec middleman serve
 
 The local URL and port where the files can be previewed will be output, this is normally http://localhost:4567.
 
-####Building
-#####To build the templates and output them to the `./public/` directory
+### Building
+#### To build the templates and output them to the `./public/` directory
 ```
 bundle install
 bundle exec middleman build --build-dir=public/ --clean
 ```
 
-#####To build the templates and output them to the `./public/` directory and set the base path
+#### To build the templates and output them to the `./public/` directory and set the base path
 This is only needed when the files are served through the Scala Application.
 
 ```
@@ -44,6 +44,6 @@ BASE_PATH="/guides/telephony-service-guide/" bundle exec middleman build --build
 [rvm]: https://www.ruby-lang.org/en/documentation/installation/#managers
 [bundler]: http://bundler.io/
 [tdt]: https://github.com/alphagov/tech-docs-template
-### License
 
+## License
 This code is open source software licensed under the [Apache 2.0 License]("http://www.apache.org/licenses/LICENSE-2.0.html").
