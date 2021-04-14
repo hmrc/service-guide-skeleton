@@ -1,10 +1,9 @@
 ---
-title: Telephony Service Guide
+title: Example Service Guide
 weight: 1
-description: Software developers, designers, product owners or business analysts. Integrate your software with VAT API for Making Tax Digital.
 ---
 
-# Telephony Service Guide
+# Example Service Guide
 
 Version 1.0 issued 1 January 2020
 ***
