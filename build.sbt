@@ -12,8 +12,3 @@ lazy val microservice = Project(appName, file("."))
   .settings(
     publishingSettings: _*
   )
-  .settings(
-    resolvers += "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
-    resolvers += Resolver.bintrayRepo("hmrc", "releases"),
-    resolvers += Resolver.jcenterRepo
-  )

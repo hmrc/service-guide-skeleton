@@ -1,8 +1,9 @@
-resolvers += Resolver.url("hmrc-sbt-plugin-releases", url("https://dl.bintray.com/hmrc/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
-resolvers += "Typesafe Releases" at "https://repo.typesafe.com/typesafe/releases/"
-resolvers += "HMRC Releases" at "https://dl.bintray.com/hmrc/releases"
+resolvers ++= Seq(
+  Resolver.url("HMRC-open-artefacts-ivy", url("https://open.artefacts.tax.service.gov.uk/ivy2"))(Resolver.ivyStylePatterns),
+  "HMRC-open-artefacts-maven" at "https://open.artefacts.tax.service.gov.uk/maven2")
 
-addSbtPlugin("uk.gov.hmrc" % "sbt-auto-build" % "2.12.0")
+
+addSbtPlugin("uk.gov.hmrc" % "sbt-auto-build" % "2.15.0")
 
 addSbtPlugin("uk.gov.hmrc" % "sbt-git-versioning" % "2.2.0")
 
