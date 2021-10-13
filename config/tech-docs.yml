@@ -1,10 +1,18 @@
+# Human read-able name for this site, displayed in the header bar
+service_name: Example Service Guide/Roadmap
+
+# The route that will be used to access this site (with tailing slash)
+service_link: /guides/example-service-guide/
+
+# ================================================
+# You shouldn't need to edit anything below here
+# ================================================
+
 # Host to use for canonical URL generation (without trailing slash)
 host: developer.service.hmrc.gov.uk
 
 # Header-related options
 show_govuk_logo: true
-service_name: HUMAN READABLE SERVICE GUIDE NAME
-service_link: /guides/NAME-OF-YOUR-SERVICE-GUIDE/
 
 # Links to show on right-hand-side of header
 header_links:
@@ -39,4 +47,3 @@ max_toc_heading_level: 2
 prevent_indexing: false
 
 show_contribution_banner: false
-
