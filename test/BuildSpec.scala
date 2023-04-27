@@ -19,6 +19,7 @@ package test
 import scala.sys.process._
 
 import org.scalatest.{Matchers, WordSpec}
+import scala.language.postfixOps
 
 class BuildSpec extends WordSpec with Matchers {
   "Building the content" should {
