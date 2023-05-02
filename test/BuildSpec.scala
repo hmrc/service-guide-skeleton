@@ -16,6 +16,7 @@
 
 package test
 
+import scala.language.postfixOps
 import scala.sys.process._
 
 import org.scalatest.{Matchers, WordSpec}
