@@ -3,6 +3,7 @@ service_name: Example Service Guide/Roadmap
 
 # The route that will be used to access this site (with tailing slash)
 service_link: /guides/example-service-guide/
+use_service_link_for_favicon: true
 
 # ================================================
 # You shouldn't need to edit anything below here
